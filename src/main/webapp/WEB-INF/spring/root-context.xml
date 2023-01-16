@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="userDao" class="com.me.dao.UserDAO" scope="session" />
+	<bean id="hospitalDao" class="com.me.dao.HospitalDAO" scope="session" />
+	<bean id="pharmacyDao" class="com.me.dao.PharmacyDAO" scope="session" />
+	<bean id="nurseDao" class="com.me.dao.NurseDAO" scope="session" />
+	<bean id="vaccineDao" class="com.me.dao.VaccineDAO" scope="session" />
+	<bean id="patientDao" class="com.me.dao.PatientDAO" scope="session" />
+	<bean id="vaccineRequestDao" class="com.me.dao.VaccineRequestDAO" scope="session" />
+	<bean id="user" class="com.me.pojo.User" scope="session" />	
+</beans>
